@@ -34,7 +34,7 @@
 
 ---
 all:
-  hosts:
+  xhosts:
     fortimanagers:
       ansible_host: 172.31.200.57
       ansible_user: json
