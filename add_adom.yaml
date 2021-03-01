@@ -6,7 +6,7 @@
     - fortinet.fortimanager
   vars:
     # geo_zone: 'NA'
-    adom: 'AnsibleTest'
+    # adom: 'AnsibleTest'
     # fsw: 'FSW108E'
     # fsw_nm: '{{fsw}}'
     # fsw_tpt: '{{fsw}}'
