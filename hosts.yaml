@@ -26,8 +26,25 @@
 #     # project
 #     # adom: 'AnsibleTest'
 #     # fgt:  'FGT40F'
-[fortimanagers]
-fortimanager01 ansible_host=172.31.200.57 ansible_user="json" ansible_password="123456"
+# [fortimanagers]
+# fortimanager01 ansible_host=172.31.200.57 ansible_user="json" ansible_password="123456"
 
-[fortimanagers:vars]
-ansible_network_os=fortinet.fortimanager.fortimanager
+# [fortimanagers:vars]
+# ansible_network_os=fortinet.fortimanager.fortimanager
+
+---
+all:
+  hosts:
+    fortimanagers:
+      ansible_host: 172.31.200.57
+      ansible_user: json
+      ansible_password: 123456
+  vars:
+    ansible_network_os: fortinet.fortimanager.fortimanager
+    ansible_become: no
+    ansible_become_method: disable
+    ansible_httpapi_use_ssl: true
+    ansible_httpapi_validate_certs: false
+    # project
+    adom: 'Acme'
+    fgt:  'FGT40F'
