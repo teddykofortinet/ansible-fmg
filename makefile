@@ -1,1 +1,1 @@
-.PHONY test
+.PHONY
