@@ -6,7 +6,7 @@ all:
       #ansible_port: 10406
       ansible_httpapi_port: 443
       ansible_user: json
-      ansible_password: 123456
+      ansible_password: 123456FUCK
     # mantaran:                         
     #   ansible_host:
     #   ansible_user: 
