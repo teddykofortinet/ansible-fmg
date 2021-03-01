@@ -3,7 +3,7 @@ all:
   hosts:
     teddy:                         
       ansible_host: 172.31.200.57
-      ansible_port: 10406
+      #ansible_port: 10406
       ansible_httpapi_port: 10406
       ansible_user: json
       ansible_password: 123456
