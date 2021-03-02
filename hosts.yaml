@@ -6,7 +6,7 @@ all:
       ansible_user: 'json'
       ansible_password: '123456'
     tsvetan:
-      ansible_host:
+      ansible_host: test
       ansible_user:
       ansible_password:
   vars:
