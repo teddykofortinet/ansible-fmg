@@ -68,8 +68,8 @@
              params:
                 - url: 'sys/login/user'
                   data:
-                   - user: 'APIUser'
-                     passwd: 'Fortinet1!e'
+                   - user: 'json'
+                     passwd: '123456'
 #      ignore_errors: yes
 
 #   - name: Create a script on FortiManager.
