@@ -17,4 +17,4 @@ all:
     ansible_httpapi_validate_certs: false
     # project
     adom: 'AnsibleTest'
-    fgt:  'FGT40F'
+    # fgt:  'FGT40F'
