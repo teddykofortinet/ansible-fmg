@@ -1,5 +1,5 @@
 ---
-- hosts: fortimanagers
+- hosts: all
   connection: httpapi
   collections:
     - fortinet.fortimanager

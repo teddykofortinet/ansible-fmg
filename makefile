@@ -9,5 +9,4 @@ cmdenv = $(cmd) \
 	-e 'site_id=$(site_id)'
 
 add_adom:
-	# $(cmdenv) -l teddy add_adom.yaml
-	$(cmdenv) add_adom.yaml
+	$(cmdenv) -l teddy add_adom.yaml
