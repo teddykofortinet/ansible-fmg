@@ -37,8 +37,8 @@ all:
   hosts:
     fortimanagers:
       ansible_host: 172.31.200.57
-      ansible_user: json
-      ansible_password: 123456
+      ansible_user: 'json'
+      ansible_password: '123456'
   vars:
     ansible_network_os: fortinet.fortimanager.fortimanager
     ansible_become: no
