@@ -5,6 +5,10 @@ all:
       ansible_host: 172.31.200.57
       ansible_user: 'json'
       ansible_password: '123456'
+    tsvetan:
+      ansible_host:
+      ansible_user:
+      ansible_password:
   vars:
     ansible_network_os: fortinet.fortimanager.fortimanager
     ansible_become: no
