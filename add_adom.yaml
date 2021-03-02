@@ -18,6 +18,14 @@
               - name: '{{adom}}'
                 os_ver: '6.0'
                 mr: 4
+    - name: create address object
+      fmgr_generic:
+        method: add
+        params:
+          - data:
+              - name: 'AnsibleAddress'
+                subnet: '10.10.1.15 255.255.255.255'
+            url: '/pm/config/adom/{{adom}}/obj/firewall/address'
 #      ignore_errors: yes
 
 #   - name: Create a script on FortiManager.
