@@ -1,3 +1,9 @@
+Project for ansible-fmg
+
+To see it in action, type "make" in the project directory
+
+------------------------------------------------------------------------------------------------
+
 General Guidelines
 
 The command:
