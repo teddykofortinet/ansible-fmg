@@ -1,37 +1,3 @@
-# ---
-# all:
-#   hosts:
-#     teddy:                         
-#       ansible_host: 172.31.200.57
-#       #ansible_port: 10406
-#       ansible_httpapi_port: 443
-#       ansible_user: json
-#       ansible_password: 123456
-#     # mantaran:                         
-#     #   ansible_host:
-#     #   ansible_user: 
-#     #   ansible_password: 
-#     # tsvetan:                        
-#     #   ansible_host: 
-#     #   ansible_user: 
-#     #   ansible_password: 
-
-#   vars:
-#     # inventory
-#     ansible_network_os: fortinet.fortimanager.fortimanager
-#     #ansible_become: no
-#     #ansible_become_method: disable
-#     # ansible_httpapi_use_ssl: true
-#     # ansible_httpapi_validate_certs: false
-#     # project
-#     # adom: 'AnsibleTest'
-#     # fgt:  'FGT40F'
-# [fortimanagers]
-# fortimanager01 ansible_host=172.31.200.57 ansible_user="json" ansible_password="123456"
-
-# [fortimanagers:vars]
-# ansible_network_os=fortinet.fortimanager.fortimanager
-
 ---
 all:
   hosts:
@@ -46,5 +12,5 @@ all:
     ansible_httpapi_use_ssl: true
     ansible_httpapi_validate_certs: false
     # project
-    adom: 'Acme'
+    adom: 'AnsibleTest'
     fgt:  'FGT40F'
