@@ -18,7 +18,7 @@ ansible-playbook -i hosts.yaml -v -e 'site_id=FGT' -l teddy add_adom.yaml
 
 GIT
 
-Key passphrase: Fortinet123:
+Key passphrase: same as admin login for ansible box
 
 ------------------------------------------------------------------------------------------------
 
