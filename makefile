@@ -9,4 +9,4 @@ cmdenv = $(cmd) \
 	-e 'site_id=$(site_id)'
 
 add_adom:
-	$(cmdenv) -l teddy add_device_discover.yaml
+	$(cmdenv) -l vanita add_device_discover.yaml

@@ -5,9 +5,9 @@
     - fortinet.fortimanager
   vars:
     adom: root
-    device_ip: 172.17.96.29
+    device_ip: 172.17.96.69
     device_username: 'admin'
-    device_password: ''
+    device_password: 'admin'
     device_name: 'newDevice'
   tasks:
    - name: Probe a remote device and retrieve its device information and system status.
