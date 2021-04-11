@@ -17,5 +17,5 @@ all:
     ansible_httpapi_validate_certs: false
     ansible_httpapi_port: 443
     # project
-    adom: 'AnsibleTest'
+    # adom: 'AnsibleTest'
     # fgt:  'FGT40F'
