@@ -5,16 +5,17 @@ all:
       ansible_host: 172.31.200.57
       ansible_user: 'json'
       ansible_password: '123456'
-    tsvetan:
-      ansible_host: test
-      ansible_user:
-      ansible_password:
+    vanita:
+      ansible_host: 172.31.200.52
+      ansible_user: 'fpc'
+      ansible_password: 'fpc123'
   vars:
     ansible_network_os: fortinet.fortimanager.fortimanager
     ansible_become: no
     ansible_become_method: disable
     ansible_httpapi_use_ssl: true
     ansible_httpapi_validate_certs: false
+    ansible_httpapi_port: 443
     # project
     adom: 'AnsibleTest'
     # fgt:  'FGT40F'
