@@ -9,5 +9,4 @@ cmdenv = $(cmd) \
 	-e 'site_id=$(site_id)'
 
 add_adom:
-	@echo: "$(cmdenv) -l teddy add_adom.yaml"
 	$(cmdenv) -l teddy add_device_discover.yaml
