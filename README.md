@@ -14,6 +14,14 @@ ansible-playbook -i hosts.yaml -v -e 'site_id=FGT' -l teddy add_adom.yaml
 -e environmental variables
 -l limit hosts
 
+------------------------------------------------------------------------------------------------
+
+GIT
+
+Key passphrase: Fortinet123:
+
+------------------------------------------------------------------------------------------------
+
 References:
 
 ansible-playbook --help
