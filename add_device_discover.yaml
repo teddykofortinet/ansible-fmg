@@ -23,28 +23,28 @@
               adm_usr: '{{device_username}}'
               ip: '{{device_ip}}'
 
-  #  - name: Add a device to the Device Manager database.
-  #    fmgr_dvm_cmd_add_device:
-  #       bypass_validation: False
-  #       # workspace_locking_adom: <value in [global, custom adom including root]>
-  #       # workspace_locking_timeout: 300
-  #       # rc_succeeded: [0, -2, -3, ...]
-  #       # rc_failed: [-2, -3, ...]
-  #       dvm_cmd_add_device:
-  #          adom: '{{adom}}'
-  #          device:
-  #             adm_pass: '{{device_password}}'
-  #             adm_usr: '{{device_username}}'
-  #             desc: ''
-  #             # device action: <value of string>
-  #             # faz.quota: <value of integer>
-  #             ip: '{{device_ip}}'
-  #             # meta fields: <value of dict>
-  #             mgmt_mode: fmg
-  #             # mr: <value of integer>
-  #             name: '{{device_name}}'
-  #             # os_type: <value in [unknown, fos, fsw, ...]>
-  #             # os_ver: <value in [unknown, 0.0, 1.0, ...]>
-  #             # patch: <value of integer>
-  #             # platform_str: <value of string>
-  #             # sn: <value of string>
+   - name: Add a device to the Device Manager database.
+     fmgr_dvm_cmd_add_device:
+        bypass_validation: False
+        # workspace_locking_adom: <value in [global, custom adom including root]>
+        # workspace_locking_timeout: 300
+        # rc_succeeded: [0, -2, -3, ...]
+        # rc_failed: [-2, -3, ...]
+        dvm_cmd_add_device:
+           adom: '{{adom}}'
+           device:
+              adm_pass: '{{device_password}}'
+              adm_usr: '{{device_username}}'
+              desc: ''
+              # device action: <value of string>
+              # faz.quota: <value of integer>
+              ip: '{{device_ip}}'
+              # meta fields: <value of dict>
+              mgmt_mode: fmg
+              # mr: <value of integer>
+              name: '{{device_name}}'
+              # os_type: <value in [unknown, fos, fsw, ...]>
+              # os_ver: <value in [unknown, 0.0, 1.0, ...]>
+              # patch: <value of integer>
+              # platform_str: <value of string>
+              # sn: <value of string>
