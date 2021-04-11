@@ -10,6 +10,19 @@
     device_password: ''
     device_name: 'newDevice'
   tasks:
+   - name: Probe a remote device and retrieve its device information and system status.
+     fmgr_dvm_cmd_discover_device:
+        bypass_validation: False
+        # workspace_locking_adom: <value in [global, custom adom including root]>
+        # workspace_locking_timeout: 300
+        # rc_succeeded: [0, -2, -3, ...]
+        # rc_failed: [-2, -3, ...]
+        dvm_cmd_discover_device:
+           device:
+              adm_pass: '{{device_password}}'
+              adm_usr: '{{device_username}}'
+              ip: '{{device_ip}}'
+
    - name: Add a device to the Device Manager database.
      fmgr_dvm_cmd_add_device:
         bypass_validation: False
@@ -20,8 +33,8 @@
         dvm_cmd_add_device:
            adom: '{{adom}}'
            device:
-              adm_pass: '{{device_username}}'
-              adm_usr: '{{device_password}}'
+              adm_pass: '{{device_password}}'
+              adm_usr: '{{device_username}}'
               desc: ''
               # device action: <value of string>
               # faz.quota: <value of integer>
