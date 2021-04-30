@@ -25,7 +25,7 @@
               - name: '{{adom}}'
                 os_ver: '6.0'
                 mr: 4
-      when: not adom_table is match(.*AnsibleTest.*)
+      when: not adom_table.stdout is match(.*AnsibleTest.*)
     - name: create address object
       fmgr_generic:
         method: add
