@@ -10,11 +10,12 @@
     adom: 'AnsibleTest'
 
   tasks:
-    - name: get list of adoms
+    - name: get ADOM table
       fmgr_generic:
         method: get
         params:
           - url: '/dvmdb/adom'
+      register:  adom_table
     - name: add adom {{adom}}
       fmgr_generic:
         method: add
@@ -24,7 +25,7 @@
               - name: '{{adom}}'
                 os_ver: '6.0'
                 mr: 4
-      when: adom != 'AnsibleTest'
+      when: '"AnsibleTest" not in adom_table'
     - name: create address object
       fmgr_generic:
         method: add
