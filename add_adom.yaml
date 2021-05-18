@@ -25,16 +25,16 @@
               - name: '{{adom}}'
                 os_ver: '6.0'
                 mr: 4
-      when: not adom_table.stdout is match(.*AnsibleTest.*)
-    - name: create address object
-      fmgr_generic:
-        method: add
-        params:
-          - data:
-              - name: 'AnsibleAddress'
-                subnet: '10.10.1.15 255.255.255.255'
-            url: '/pm/config/adom/{{adom}}/obj/firewall/address'
-      when: adom != 'AnsibleTest'
+      # when: not adom_table.stdout is match(.*AnsibleTest.*)
+    # - name: create address object
+    #   fmgr_generic:
+    #     method: add
+    #     params:
+    #       - data:
+    #           - name: 'AnsibleAddress'
+    #             subnet: '10.10.1.15 255.255.255.255'
+    #         url: '/pm/config/adom/{{adom}}/obj/firewall/address'
+    #   when: adom != 'AnsibleTest'
 #      ignore_errors: yes
 
 #   - name: Create a script on FortiManager.

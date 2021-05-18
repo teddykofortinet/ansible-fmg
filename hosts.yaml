@@ -2,7 +2,7 @@
 all:
   hosts:
     teddy:
-      ansible_host: 172.31.200.57
+      ansible_host: 172.31.200.67
       ansible_user: 'json'
       ansible_password: '123456'
     vanita:
